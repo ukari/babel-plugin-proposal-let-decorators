@@ -4,7 +4,7 @@
   "author": "Muromi Ukari <chendianbuji@gmail.com>",
   "license": "MIT",
   "description": "Compile let decorators to ES6",
-  "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-let-decorators",
+  "repository": "https://github.com/ukari/babel-plugin-proposal-let-decorators.git",
   "main": "lib/index.js",
   "keywords": [
     "babel",
