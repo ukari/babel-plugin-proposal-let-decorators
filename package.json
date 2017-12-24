@@ -11,14 +11,12 @@
     "babel-plugin",
     "decorators"
   ],
-  "dependencies": {
-    "@babel/plugin-syntax-let-decorators": "github:ukari/babel-plugin-syntax-let-decorators"
-  },
   "peerDependencies": {
     "@babel/core": "7.0.0-beta.35"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.35",
-    "@babel/helper-plugin-test-runner": "7.0.0-beta.35"
+    "@babel/helper-plugin-test-runner": "7.0.0-beta.35",
+    "@babel/plugin-syntax-let-decorators": "github:ukari/babel-plugin-syntax-let-decorators"
   }
 }
