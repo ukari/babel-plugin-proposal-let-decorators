@@ -4,7 +4,7 @@
 
 ## Example
 
-(examples are from proposal)
+(get more examples from proposal)
 
 ### Simple let decorator
 
