@@ -1,3 +1,5 @@
+const { BLOCK_SCOPED_SYMBOL } = require("@babel/types");
+
 function PatternToExpression(t, pattern) {
   if (t.isArrayPattern(pattern)) {
     return t.arrayExpression(
@@ -44,11 +46,15 @@ function aliasProcess(t, path, node, now) {
 module.exports = function(babel) {
   const t = babel.types;
   return {
+    name: "babel-plugin-proposal-let-decorators",
     inherits: require("@babel/plugin-syntax-let-decorators").default,
     visitor: {
       VariableDeclaration: function(path) {
         if (path.node.decorators) {
-          if (path.node.kind == "let") {
+          if (
+            path.node.kind == "let" ||
+            path.node[BLOCK_SCOPED_SYMBOL] == true
+          ) {
             path.node.declarations
               .map(x => x)
               .reverse()
